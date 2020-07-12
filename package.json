@@ -1,15 +1,32 @@
 {
   "name": "guan_restaurant_landing",
   "version": "0.1.0",
+  "description": "Guan Landing Page",
   "private": true,
+  "main": "index.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next export"
   },
+  "keywords": ["Guan"],
+  "author": "Guan.pe",
+  "license": "ISC",
   "dependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint-config-prettier": "^6.3.0",
     "next": "9.4.4",
+    "prettier": "^1.18.2",
     "react": "16.13.1",
     "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "eslint": "6.1.0",
+    "eslint-config-airbnb": "18.0.1",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.14.3",
+    "eslint-plugin-react-hooks": "1.7.0"
   }
 }
