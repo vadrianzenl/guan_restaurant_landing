@@ -6,6 +6,7 @@ import Benefits from '../src/components/benefits';
 import Contact from '../src/components/contact';
 import Footer from '../src/components/footer';
 import PreLoader from '../src/components/preloader';
+import Video from '../src/components/video';
 
 const Landing = () => {
   return (
@@ -16,6 +17,7 @@ const Landing = () => {
       <Header />
       <AboutUs />
       <Benefits />
+      <Video />
       <Contact />
       <Footer />
       <PreLoader />

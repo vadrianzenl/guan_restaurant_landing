@@ -8,10 +8,9 @@ const Contact = () => {
           <div className="col-lg-12">
             <div className="contact-text section-header text-center">
               <div>
-                <h2 className="section-title">Get In Touch</h2>
+                <h2 className="section-title">¿Est&aacute;s interesado en afiliar tu negocio?</h2>
                 <div className="desc-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-                  <p>eiusmod tempor incididunt ut labore et dolore.</p>
+                  <p>Solicita una demo de la plataforma</p>
                 </div>
               </div>
             </div>
@@ -21,35 +20,21 @@ const Contact = () => {
           <div className="col-lg-6 col-md-12">
             <form id="contactForm">
               <div className="row">
-                <div className="col-md-6">
+                <div className="col-md-12">
                   <div className="form-group">
                     <input
                       type="text"
                       className="form-control"
                       id="name"
                       name="name"
-                      placeholder="Name"
+                      placeholder="Nombre"
                       required
                       data-error="Please enter your name"
                     />
                     <div className="help-block with-errors" />
                   </div>
                 </div>
-                <div className="col-md-6">
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      placeholder="Subject"
-                      id="msg_subject"
-                      className="form-control"
-                      name="msg_subject"
-                      required
-                      data-error="Please enter your subject"
-                    />
-                    <div className="help-block with-errors" />
-                  </div>
-                </div>
-                <div className="col-md-6">
+                <div className="col-md-12">
                   <div className="form-group">
                     <input
                       type="text"
@@ -63,27 +48,13 @@ const Contact = () => {
                     <div className="help-block with-errors" />
                   </div>
                 </div>
-                <div className="col-md-6">
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      placeholder="Budget"
-                      id="budget"
-                      className="form-control"
-                      name="budget"
-                      required
-                      data-error="Please enter your Budget"
-                    />
-                    <div className="help-block with-errors" />
-                  </div>
-                </div>
                 <div className="col-md-12">
                   <div className="form-group">
                     <textarea
                       className="form-control"
                       id="message"
                       name="message"
-                      placeholder="Write Message"
+                      placeholder="Mensaje"
                       rows="4"
                       data-error="Write your message"
                       required

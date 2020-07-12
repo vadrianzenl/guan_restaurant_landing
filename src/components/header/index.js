@@ -10,7 +10,7 @@ const Header = () => {
       <nav className="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
         <div className="container">
           <a href="/" className="navbar-brand">
-            <img src="/img/logo.png" alt="" />
+            <img src="/img/logo2.png" alt="" />
           </a>
           <button
             className="navbar-toggler"
@@ -41,7 +41,14 @@ const Header = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="btn btn-singin" href="#contact">Contacto</a>
+                <a className="nav-link page-scroll" href="#testimonial">
+                  Video
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link page-scroll" href="#contact">
+                  Contacto
+                </a>
               </li>
             </ul>
           </div>
@@ -51,28 +58,38 @@ const Header = () => {
         <div className="row space-100">
           <div className="col-lg-6 col-md-12 col-xs-12">
             <div className="contents">
-              <h2 className="head-title">You are Using Free Lite Version</h2>
+              <h2 className="head-title">Plataforma de reservas y atenci&oacute;n en mesa</h2>
               <p>
-                Please, Purchase full version of Slick to get all pages, features and permission to
-                use in commercial projects
+                Se uno de los primeros en utilizar Guan en tus
+                restaurantes favoritos y obtén descuentos
               </p>
               <div className="header-button">
-                <a
-                  href="https://rebrand.ly/slick-ud"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  className="btn btn-border-filled"
-                >
-                  Purchase Now
-                </a>
-                <a
-                  href="https://rebrand.ly/slick-ud"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  className="btn btn-border page-scroll"
-                >
-                  Learn More
-                </a>
+                <div className="form-group">
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Nombre"
+                    required
+                    data-error="Please enter your name"
+                  />
+                  <div className="help-block with-errors" />
+                </div>
+                <div className="form-group">
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                    data-error="Please enter your Email"
+                  />
+                  <div className="help-block with-errors" />
+                </div>
+                <a href="https://rebrand.ly/slick-ud" rel="nofollow" target="_blank" className="btn btn-border-filled">
+                  Enviar</a>
               </div>
             </div>
           </div>

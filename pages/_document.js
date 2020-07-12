@@ -12,6 +12,7 @@ class LandingDocument extends Document {
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
           <meta name="description" content="Landing Page for the Guan.pe company" />
           <meta name="author" content="Guan Company" />
+          <link rel="icon" href="/favicon.png" />
 
           <meta property="og:site_name" content="" />
           <meta property="og:site" content="" />
@@ -21,6 +22,7 @@ class LandingDocument extends Document {
           <meta property="og:url" content="" />
           <meta property="og:type" content="article" />
 
+          <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet" />
           <link rel="stylesheet" href="/css/bootstrap.min.css" />
           <link rel="stylesheet" href="/css/animate.css" />
           <link rel="stylesheet" href="/css/LineIcons.css" />
@@ -30,6 +32,7 @@ class LandingDocument extends Document {
           <link rel="stylesheet" href="/css/nivo-lightbox.css" />
           <link rel="stylesheet" href="/css/main.css" />
           <link rel="stylesheet" href="/css/responsive.css" />
+          <link rel="stylesheet" href="/css/fontawesome-all.css" />
         </Head>
         <body>
           <Main />

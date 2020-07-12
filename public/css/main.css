@@ -13,6 +13,16 @@ Domain Path:      /languages/
 /* ==========================================================================
    GENERAL
    ========================================================================== */
+
+:root {
+  --dark_purple: #41274D;
+  --light-grey: #EAF4F9;
+  --fuchsia: #E20E88;
+  --orange: #FF6A3C;
+  --gradient: #FC3961;
+  --light-blue: #3F80F9;
+}
+
 body {
   font-family: 'Rubik', sans-serif;
   color: #a0a6ad;
@@ -185,7 +195,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   vertical-align: middle; }
 
 .btn-singin {
-  background: #7fc9fb;
+  background: var(--light-blue);
   color: #fff;
   padding: 10px 23px;
   margin-left: 30px;
@@ -348,8 +358,8 @@ button:focus {
   cursor: pointer;
   text-align: center;
   border-radius: 4px;
-  background: #5533ff;
-  background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
+  background: var(--gradient);
+  background: linear-gradient(95deg, var(--gradient) 40%, var(--orange) 100%);
   box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
   z-index: 9999999; }
 
@@ -369,8 +379,8 @@ button:focus {
   color: #fff; }
 
 .menu-bg {
-  background: #5533ff;
-  background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%) !important;
+  background: var(--gradient);
+  background: linear-gradient(95deg, var(--gradient) 40%, var(--orange) 100%) !important;
   box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1);
   z-index: 9999;
   padding: 5px;
@@ -461,8 +471,8 @@ button:focus {
     height: 100%;
     top: 0px;
     left: 0px;
-    background: #5533ff;
-    background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
+    background: var(--gradient);
+    background: linear-gradient(95deg, var(--gradient) 40%, var(--orange) 100%);
     -webkit-transform: skewY(-12deg);
     transform: skewY(-12deg);
     -webkit-transform-origin: 0;
@@ -475,20 +485,20 @@ button:focus {
       left: 16.66666%;
       left: calc(calc(100% / 3) / 2);
       right: auto;
-      background: #5533ff;
-      background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
+      background: var(--gradient);
+      background: linear-gradient(95deg, var(--gradient) 40%, var(--orange) 100%);
       height: 200px; }
     .hero-area .overlay :nth-child(2) {
       width: 33.33333%;
       width: calc(100% /3);
       bottom: 0;
-      background: #5533ff;
-      background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
+      background: var(--gradient);
+      background: linear-gradient(95deg, var(--gradient) 40%, var(--orange) 100%);
       position: absolute;
       height: 155px;
       left: 3%; }
   .hero-area .contents {
-    padding: 220px 0; }
+    padding: 200px 0; }
     .hero-area .contents h2 {
       color: #fff;
       font-size: 38px;
@@ -500,7 +510,7 @@ button:focus {
       font-size: 18px;
       line-height: 26px; }
     .hero-area .contents .btn {
-      margin-top: 40px;
+      /*margin-top: 40px;*/
       margin-right: 20px;
       text-transform: uppercase;
       width: 180px;
@@ -524,6 +534,15 @@ button:focus {
       display: block;
       height: auto;
       max-width: 100%; }
+  .header-button {
+    margin-top: 20px;
+  }
+  .header-button input[type=text], input[type=email] {
+    min-height: 52px;
+    padding: 0px 0 0 28px;
+    font-size: 16px;
+    color: #5e629c;
+  }
 
 /* ==========================================================================
    About 
@@ -764,8 +783,8 @@ button:focus {
   #showcase .showcase-text p {
     color: #fff; }
   #showcase .gradient-bg {
-    background: #5533ff;
-    background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
+    background: var(--gradient);
+    background: linear-gradient(95deg, var(--gradient) 40%, var(--orange) 100%);
     padding: 119px 0px 80px 0px; }
   #showcase .showcase-slider .owl-controls .owl-page.active span, #showcase .showcase-slider .owl-controls.clickable .owl-page:hover span {
     filter: Alpha(Opacity=100);

@@ -8,11 +8,10 @@ const Benefits = () => {
           <div className="col-lg-12">
             <div className="features-text section-header text-center">
               <div>
-                <h2 className="section-title">Services We Provide</h2>
+                <h2 className="section-title">Beneficios</h2>
                 <div className="desc-text">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do <br /> eiusmod
-                    tempor incididunt ut labore et dolore.
+                    Disfruta de todos los beneficios que te ofrece Guan
                   </p>
                 </div>
               </div>
