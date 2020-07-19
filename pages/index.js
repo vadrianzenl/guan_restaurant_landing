@@ -6,6 +6,7 @@ import Benefits from '../src/components/benefits';
 import Contact from '../src/components/contact';
 import Footer from '../src/components/footer';
 import PreLoader from '../src/components/preloader';
+import { ToastContainer } from 'react-nextjs-toast';
 
 const Landing = () => {
   return (
@@ -19,6 +20,7 @@ const Landing = () => {
       <Contact />
       <Footer />
       <PreLoader />
+      <ToastContainer />
     </div>
   );
 };

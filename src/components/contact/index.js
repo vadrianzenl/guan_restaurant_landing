@@ -1,6 +1,22 @@
-import React from 'react';
+import React, {useState} from 'react';
+import saveBusiness from '../../api/business';
+import { toast } from 'react-nextjs-toast';
 
 const Contact = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const handleChange = setValue => e => setValue(e.target.value);
+  const handleSaveBusiness = () => {
+    if(!email) {
+      toast.notify(`Por favor, Ingresa tu Email para poder contactarte.`, {duration: 5, type: "error"});
+      return;
+    }
+    saveBusiness(name, email, message);
+    setName('');
+    setEmail('');
+    setMessage('');
+  };
   return (
     <section id="contact" className="section">
       <div className="container">
@@ -27,6 +43,8 @@ const Contact = () => {
                       className="form-control"
                       id="name"
                       name="name"
+                      value={name}
+                      onChange={handleChange(setName)}
                       placeholder="Nombre"
                       required
                       data-error="Please enter your name"
@@ -41,6 +59,8 @@ const Contact = () => {
                       className="form-control"
                       id="email"
                       name="email"
+                      value={email}
+                      onChange={handleChange(setEmail)}
                       placeholder="Email"
                       required
                       data-error="Please enter your Email"
@@ -54,6 +74,8 @@ const Contact = () => {
                       className="form-control"
                       id="message"
                       name="message"
+                      value={message}
+                      onChange={handleChange(setMessage)}
                       placeholder="Mensaje"
                       rows="4"
                       data-error="Write your message"
@@ -62,9 +84,7 @@ const Contact = () => {
                     <div className="help-block with-errors" />
                   </div>
                   <div className="submit-button">
-                    <button className="btn btn-common" id="submit" type="submit">
-                      Submit
-                    </button>
+                    <button type="button" className="btn btn-common" onClick={handleSaveBusiness}>Enviar</button>
                     <div id="msgSubmit" className="h3 hidden" />
                     <div className="clearfix" />
                   </div>

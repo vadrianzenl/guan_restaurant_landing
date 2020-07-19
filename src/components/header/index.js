@@ -1,11 +1,16 @@
 import React, {useState} from 'react';
 import saveCustomer from '../../api/customers';
+import { toast } from 'react-nextjs-toast';
 
 const Header = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const handleChange = setValue => e => setValue(e.target.value);
   const handleSaveCustomer = () => {
+    if(!email) {
+      toast.notify(`Por favor, Ingresa tu Email para poder contactarte.`, {duration: 5, type: "error"});
+      return;
+    }
     saveCustomer(name, email);
     setName('');
     setEmail('');
@@ -96,7 +101,7 @@ const Header = () => {
                   />
                   <div className="help-block with-errors" />
                 </div>
-                <button type="button" className="btn btn-border-filled" data-toggle="modal" data-target="#exampleModal" onClick={handleSaveCustomer}>Enviar</button>
+                <button type="button" className="btn btn-border-filled" onClick={handleSaveCustomer}>Enviar</button>
               </div>
             </div>
           </div>
@@ -111,24 +116,6 @@ const Header = () => {
                   <span />
                 </a>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="modal fade" id="exampleModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div className="modal-dialog" role="document">
-          <div className="modal-content">
-            <div className="modal-header">
-              <h5 className="modal-title" id="exampleModalLabel">¡Mensaje Enviado!</h5>
-              <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div className="modal-body">
-              Pronto estaremos en contacto contigo. Gracias por ser parte de Guan.
-            </div>
-            <div className="modal-footer text-center">
-              <button type="button" className="btn btn-success" data-dismiss="modal">Aceptar</button>
             </div>
           </div>
         </div>

@@ -1598,3 +1598,7 @@ button:focus {
 .footer .fa-stack:hover .fa-stack-2x {
   color: #00a7bd;
 }
+
+.modal-content {
+  margin-top: 80px;
+}
