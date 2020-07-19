@@ -323,7 +323,7 @@ button:focus {
   height: 100%;
   border-radius: 100%;
   border: 7px solid transparent;
-  border-top-color: #3c9cfd; }
+  border-top-color:var(--dark_purple); }
 
 #loader-1:before {
   z-index: 100;
@@ -344,8 +344,8 @@ button:focus {
     -o-transform: rotate(360deg);
     transform: rotate(360deg); } }
 
-/* ========================================================================== 
-   Scroll To Up 
+/* ==========================================================================
+   Scroll To Up
    ========================================================================== */
 .back-to-top {
   display: none;
@@ -529,7 +529,7 @@ button:focus {
         background: #fff;
         color: #3ecf8e; }
   .hero-area .intro-img {
-    padding: 180px 0 0px; }
+    padding: 230px 0 0px; }
     .hero-area .intro-img img {
       display: block;
       height: auto;
@@ -543,9 +543,76 @@ button:focus {
     font-size: 16px;
     color: #5e629c;
   }
-
+.hero-area .intro-img .video-promo-content {
+  background: url(../img/video.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 0;
+  padding-bottom: 300px;
+}
+.hero-area .intro-img .video-play-button {
+  position: absolute;
+  z-index: 10;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  box-sizing: content-box;
+  display: block;
+  width: 32px;
+  height: 44px;
+  /* background: #fa183d; */
+  border-radius: 50%;
+  padding: 18px 20px 18px 28px; }
+.hero-area .intro-img .video-play-button:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border-radius: 50%;
+  animation: pulse-border 1500ms ease-out infinite; }
+.hero-area .intro-img .video-play-button:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border-radius: 50%;
+  transition: all 200ms;
+  opacity: 0.5; }
+.hero-area .intro-img .video-play-button:hover:after {
+  background-color: #28ca81; }
+.hero-area .intro-img .video-play-button:hover span {
+  border-left: 22px solid #fff;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid transparent;
+  border-radius: 2px; }
+.hero-area .intro-img .video-play-button span {
+  display: block;
+  position: relative;
+  z-index: 3;
+  width: 0;
+  height: 0;
+  border-left: 22px solid #3ecf8e;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid transparent;
+  border-radius: 2px;
+  margin-top: 8px;
+  margin-left: 5px; }
 /* ==========================================================================
-   About 
+   About
    ========================================================================== */
 #services .services-item {
   padding: 60px 30px;
@@ -554,13 +621,13 @@ button:focus {
   -webkit-transition: all .8s ease;
   transition: all .8s ease; }
   #services .services-item:hover {
-    border: 1px solid #3ecf8e;
+    border: 1px solid var(--gradient);
     box-shadow: 0px 0px 25px 0px rgba(95, 95, 95, 0.24);
     -moz-transition: all .4s ease;
     -webkit-transition: all .4s ease;
     transition: all .4s ease; }
   #services .services-item .icon {
-    background: #e3fff2;
+    background: var(--light-grey);
     width: 110px;
     height: 110px;
     margin: 0px auto;
@@ -572,7 +639,7 @@ button:focus {
     margin-bottom: 25px; }
   #services .services-item .icon i {
     font-size: 40px;
-    color: #3ecf8e;
+    color: var(--gradient);
     position: absolute;
     left: 0;
     right: 0;
@@ -588,7 +655,7 @@ button:focus {
     color: #5e629c; }
 
 /* ==========================================================================
-   business-plan Section 
+   business-plan Section
    ========================================================================== */
 #business-plan {
   padding-bottom: 130px; }
@@ -606,7 +673,7 @@ button:focus {
       margin-bottom: 20px; }
 
 /* ==========================================================================
-   Features 
+   Features
    ========================================================================== */
 #features {
   background: #f9f9f9; }
@@ -620,13 +687,13 @@ button:focus {
   #features .featured-border3 {
     border-right: 1px solid #ededed; }
   #features .feature-item {
-    padding: 30px;
+    padding: 25px;
     overflow: hidden;
     -moz-transition: all .8s ease;
     -webkit-transition: all .8s ease;
     transition: all .8s ease; }
     #features .feature-item .feature-icon {
-      background: #e3fff2;
+      background: var(--light-grey);
       width: 100px;
       height: 100px;
       margin: 0px auto;
@@ -639,12 +706,12 @@ button:focus {
       display: block;
       border-radius: 50%;
       position: relative;
-      margin-right: 30px;
-      border: 1px solid #3ecf8e;
-      margin-top: 12px; }
+      /*margin-right: 30px;*/
+      /*border: 1px solid var(--gradient);*/
+      /*margin-top: 12px;*/ }
       #features .feature-item .feature-icon i {
         font-size: 40px;
-        color: #3ecf8e;
+        color: var(--gradient);;
         position: absolute;
         left: 0;
         right: 0;
@@ -662,7 +729,7 @@ button:focus {
       -webkit-transition: all .8s ease;
       transition: all .8s ease; }
     #features .feature-item:hover .feature-icon {
-      background: #3ecf8e;
+      background: var(--gradient);
       -moz-transition: all .8s ease;
       -webkit-transition: all .8s ease;
       transition: all .8s ease; }
@@ -673,7 +740,7 @@ button:focus {
       transition: all .8s ease; }
 
 /* ==========================================================================
-   Features 
+   Features
    ========================================================================== */
 #download-app {
   padding-bottom: 100px; }
@@ -766,7 +833,7 @@ button:focus {
     color: #5e629c; }
 
 /* ==========================================================================
-   Showcase 
+   Showcase
    ========================================================================== */
 #showcase {
   padding-bottom: 375px; }
@@ -1008,7 +1075,7 @@ button:focus {
     opacity: 0; } }
 
 /* ==========================================================================
-   Our Pricing 
+   Our Pricing
    ========================================================================== */
 #pricing .pricing-table {
   padding: 55px;
@@ -1412,7 +1479,7 @@ button:focus {
    Footer section
    ========================================================================== */
 #footer-Content {
-  padding-top: 130px;
+  /*padding-top: 130px;*/
   background: #180e29; }
   #footer-Content .footer-logo img {
     padding-top: 70px; }
@@ -1421,7 +1488,7 @@ button:focus {
     box-shadow: none;
     background: #e5fff3; }
   #footer-Content .copyright {
-    margin-top: 125px;
+    /*margin-top: 125px;*/
     border-top: 1px solid #3c1f6e;
     padding-top: 30px;
     padding-bottom: 30px; }
@@ -1476,3 +1543,58 @@ button:focus {
       -webkit-transition: all 300ms;
       -o-transition: all 300ms;
       transition: all 300ms; }
+
+
+/**********************/
+/*     16. Footer     */
+/**********************/
+.footer {
+  padding-top: 4.625rem;
+  padding-bottom: 0.5rem;
+}
+
+.footer .footer-col {
+  margin-bottom: 2.25rem;
+}
+
+.footer h4 {
+  margin-bottom: 1rem;
+}
+
+.footer .list-unstyled .fas {
+  background: linear-gradient(to bottom, var(--fuchsia) , var(--orange));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 0.5rem;
+  line-height: 1.375rem;
+}
+
+.footer .list-unstyled .media-body {
+  margin-left: 0.625rem;
+}
+
+.footer .fa-stack {
+  margin-bottom: 0.75rem;
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.footer .fa-stack .fa-stack-1x {
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+.footer .fa-stack .fa-stack-2x {
+  background: linear-gradient(to bottom, var(--fuchsia) , var(--orange));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.2s ease;
+}
+
+.footer .fa-stack:hover .fa-stack-1x {
+  color: #fff;
+}
+
+.footer .fa-stack:hover .fa-stack-2x {
+  color: #00a7bd;
+}

@@ -4,39 +4,43 @@ const Footer = () => {
   return (
     <footer>
       <section id="footer-Content">
-        <div className="container">
-          <div className="col-md-4">
-            <div className="footer-col last">
-              <span className="fa-stack">
-                <a href="#your-link">
-                  <i className="fas fa-circle fa-stack-2x" />
-                  <i className="fab fa-facebook-f fa-stack-1x" />
-                </a>
-              </span>
-              <span className="fa-stack">
-                <a href="#your-link">
-                  <i className="fas fa-circle fa-stack-2x" />
-                  <i className="fab fa-twitter fa-stack-1x" />
-                </a>
-              </span>
-              <span className="fa-stack">
-                <a href="#your-link">
-                  <i className="fas fa-circle fa-stack-2x" />
-                  <i className="fab fa-google-plus-g fa-stack-1x" />
-                </a>
-              </span>
-              <span className="fa-stack">
-                <a href="#your-link">
-                  <i className="fas fa-circle fa-stack-2x" />
-                  <i className="fab fa-instagram fa-stack-1x" />
-                </a>
-              </span>
-              <span className="fa-stack">
-                <a href="#your-link">
-                  <i className="fas fa-circle fa-stack-2x" />
-                  <i className="fab fa-linkedin-in fa-stack-1x" />
-                </a>
-              </span>
+        <div className="footer">
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <div className="footer-col last">
+                  <span className="fa-stack">
+                    <a href="#your-link">
+                      <i className="fas fa-circle fa-stack-2x" />
+                      <i className="fab fa-facebook-f fa-stack-1x" />
+                    </a>
+                  </span>
+                  <span className="fa-stack">
+                    <a href="#your-link">
+                      <i className="fas fa-circle fa-stack-2x" />
+                      <i className="fab fa-twitter fa-stack-1x" />
+                    </a>
+                  </span>
+                  <span className="fa-stack">
+                    <a href="#your-link">
+                      <i className="fas fa-circle fa-stack-2x" />
+                      <i className="fab fa-google-plus-g fa-stack-1x" />
+                    </a>
+                  </span>
+                  <span className="fa-stack">
+                    <a href="#your-link">
+                      <i className="fas fa-circle fa-stack-2x" />
+                      <i className="fab fa-instagram fa-stack-1x" />
+                    </a>
+                  </span>
+                  <span className="fa-stack">
+                    <a href="#your-link">
+                      <i className="fas fa-circle fa-stack-2x" />
+                      <i className="fab fa-linkedin-in fa-stack-1x" />
+                    </a>
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

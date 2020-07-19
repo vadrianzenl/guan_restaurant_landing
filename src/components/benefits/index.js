@@ -20,92 +20,88 @@ const Benefits = () => {
         </div>
         <div className="row featured-bg">
           <div className="col-lg-6 col-md-6 col-xs-12 p-0">
-            <div className="feature-item featured-border1">
-              <div className="feature-icon float-left">
-                <i className="lni-coffee-cup" />
+            <div className="col-lg-12 col-md-12 col-xs-12 feature-item featured-border1 d-lg-flex d-md-flex">
+              <div className="col-lg-3 col-md-4 col-xs-12">
+                <div className="feature-icon">
+                  <i className="fas fa-mobile-alt" />
+                </div>
               </div>
-              <div className="feature-info float-left">
-                <h4>Easy to Customize</h4>
-                <p>
-                  Producing long lasting organic SEO results for <br /> brand of different kinds for
-                  more than a decade,
-                  <br /> we understand that’s your.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-6 col-md-6 col-xs-12 p-0">
-            <div className="feature-item featured-border2">
-              <div className="feature-icon float-left">
-                <i className="lni-briefcase" />
-              </div>
-              <div className="feature-info float-left">
-                <h4>Business Template</h4>
-                <p>
-                  Producing long lasting organic SEO results for <br /> brand of different kinds for
-                  more than a decade,
-                  <br /> we understand that’s your.
-                </p>
+              <div className="col-lg-9 col-md-8 col-xs-12">
+                <div className="features-benefits">
+                  <h4>Experiencia Digital</h4>
+                  <p>
+                    Todo el procedimiento de ordenar comida es digital: la carta, el pedido y el pago.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
           <div className="col-lg-6 col-md-6 col-xs-12 p-0">
-            <div className="feature-item featured-border1">
-              <div className="feature-icon float-left">
-                <i className="lni-invention" />
+            <div className="col-lg-12 col-md-12 col-xs-12 feature-item featured-border2 d-lg-flex d-md-flex">
+              <div className="col-lg-3 col-md-4 col-xs-12">
+                <div className="feature-icon">
+                  <i className="fas fa-qrcode" />
+                </div>
               </div>
-              <div className="feature-info float-left">
-                <h4>Clean & Trendy Design</h4>
-                <p>
-                  Producing long lasting organic SEO results for <br /> brand of different kinds for
-                  more than a decade,
-                  <br /> we understand that’s your.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-6 col-md-6 col-xs-12 p-0">
-            <div className="feature-item featured-border2">
-              <div className="feature-icon float-left">
-                <i className="lni-layers" />
-              </div>
-              <div className="feature-info float-left">
-                <h4>Tons of Sections</h4>
-                <p>
-                  Producing long lasting organic SEO results for <br /> brand of different kinds for
-                  more than a decade,
-                  <br /> we understand that’s your.
-                </p>
+              <div className="col-lg-9 col-md-8 col-xs-12">
+                <div className="features-benefits">
+                  <h4>Gana puntos y obt&eacute;n recompensas</h4>
+                  <p>
+                    Por cada consumo ganar&aacute;s puntos y podr&aacute;s obtener recompensas en tu
+                    pr&oacute;xima visita.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
           <div className="col-lg-6 col-md-6 col-xs-12 p-0">
-            <div className="feature-item featured-border3">
-              <div className="feature-icon float-left">
-                <i className="lni-reload" />
+            <div className="col-lg-12 col-md-12 col-xs-12 feature-item featured-border1 d-lg-flex d-md-flex">
+              <div className="col-lg-3 col-md-4 col-xs-12">
+                <div className="feature-icon">
+                  <i className="fas fa-divide" />
+                </div>
               </div>
-              <div className="feature-info float-left">
-                <h4>Free Future Updates</h4>
-                <p>
-                  Producing long lasting organic SEO results for <br /> brand of different kinds for
-                  more than a decade,
-                  <br /> we understand that’s your.
-                </p>
+              <div className="col-lg-9 col-md-8 col-xs-12">
+                <div className="features-benefits">
+                  <h4>Divide las cuentas</h4>
+                  <p>
+                    Si vas con tus amigos puedes dividir la cuenta desde la misma aplicaci&oacute;n.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
           <div className="col-lg-6 col-md-6 col-xs-12 p-0">
-            <div className="feature-item">
-              <div className="feature-icon float-left">
-                <i className="lni-support" />
+            <div className="col-lg-12 col-md-12 col-xs-12 feature-item featured-border2 d-lg-flex d-md-flex">
+              <div className="col-lg-3 col-md-4 col-xs-12">
+                <div className="feature-icon">
+                  <i className="fas fa-calendar-alt" />
+                </div>
               </div>
-              <div className="feature-info float-left">
-                <h4>Premier Support</h4>
-                <p>
-                  Producing long lasting organic SEO results for <br /> brand of different kinds for
-                  more than a decade,
-                  <br /> we understand that’s your.
-                </p>
+              <div className="col-lg-9 col-md-8 col-xs-12">
+                <div className="features-benefits">
+                  <h4>Reserva</h4>
+                  <p>
+                    Puedes reservar tu mesa desde la aplicaci&oacute;n.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-6 col-md-6 col-xs-12 p-0">
+            <div className="col-lg-12 col-md-12 col-xs-12 feature-item featured-border3 d-lg-flex d-md-flex">
+              <div className="col-lg-3 col-md-4 col-xs-12">
+                <div className="feature-icon">
+                  <i className="fas fa-file-alt" />
+                </div>
+              </div>
+              <div className="col-lg-9 col-md-8 col-xs-12">
+                <div className="features-benefits">
+                  <h4>Facturaci&oacute;n Electr&oacute;nica</h4>
+                  <p>
+                    Recibe la facturaci&oacute;n electr&oacute;nica por email.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

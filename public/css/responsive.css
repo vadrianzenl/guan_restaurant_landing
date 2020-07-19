@@ -162,7 +162,11 @@
   .navbar {
     padding: 0; }
   .navbar-brand img {
-    width: 100px; } }
+    width: 100px; }
+  .features-benefits {
+    text-align: center;
+    margin-top: 20px;
+  }}
 
 @media (min-width: 320px) and (max-width: 480px) {
   .bg-inverse {

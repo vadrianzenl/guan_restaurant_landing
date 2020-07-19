@@ -41,11 +41,6 @@ const Header = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link page-scroll" href="#testimonial">
-                  Video
-                </a>
-              </li>
-              <li className="nav-item">
                 <a className="nav-link page-scroll" href="#contact">
                   Contacto
                 </a>
@@ -95,7 +90,15 @@ const Header = () => {
           </div>
           <div className="col-lg-6 col-md-12 col-xs-12 p-0">
             <div className="intro-img">
-              <img src="/img/intro.png" alt="" />
+              <div className="video-promo-content text-center">
+                <a
+                  id="play-video"
+                  className="video-play-button video-popup"
+                  href="https://www.youtube.com/watch?v=V6k_PCPxEjU"
+                >
+                  <span />
+                </a>
+              </div>
             </div>
           </div>
         </div>

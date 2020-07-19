@@ -22,36 +22,34 @@ const AboutUs = () => {
           <div className="col-lg-4 col-md-6 col-xs-12">
             <div className="services-item text-center">
               <div className="icon">
-                <i className="lni-cog" />
+                <i className="fas fa-store" />
               </div>
               <h4>Llega</h4>
               <p>
-                Share processes and data secure lona need to know basis Our team assured your web
-                site is always safe.
+                Llega a tu restaurante favorito.
               </p>
             </div>
           </div>
           <div className="col-lg-4 col-md-6 col-xs-12">
             <div className="services-item text-center">
               <div className="icon">
-                <i className="lni-brush" />
+                <i className="fas fa-qrcode" />
               </div>
               <h4>Pide</h4>
               <p>
-                Share processes and data secure lona need to know basis Our team assured your web
-                site is always safe.
+                Escanea la carta digital y realiza el pedido desde tu celular. Espera
+                que llegue tu comida y disfrútalo.
               </p>
             </div>
           </div>
           <div className="col-lg-4 col-md-6 col-xs-12">
             <div className="services-item text-center">
               <div className="icon">
-                <i className="lni-heart" />
+                <i className="fas fa-credit-card" />
               </div>
               <h4>Paga</h4>
               <p>
-                Share processes and data secure lona need to know basis Our team assured your web
-                site is always safe.
+                Paga desde tu celular, ¡No te olvides de calificar la atenci&oacute;n!.
               </p>
             </div>
           </div>
