@@ -12,7 +12,7 @@ class LandingDocument extends Document {
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
           <meta name="description" content="Landing Page for the Guan.pe company" />
           <meta name="author" content="Guan Company" />
-          <link rel="icon" href="/favicon.png" />
+          <link rel="icon" href="favicon.png" />
 
           <meta property="og:site_name" content="" />
           <meta property="og:site" content="" />
@@ -23,31 +23,31 @@ class LandingDocument extends Document {
           <meta property="og:type" content="article" />
 
           <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet" />
-          <link rel="stylesheet" href="/css/bootstrap.min.css" />
-          <link rel="stylesheet" href="/css/animate.css" />
-          <link rel="stylesheet" href="/css/LineIcons.css" />
-          <link rel="stylesheet" href="/css/owl.carousel.css" />
-          <link rel="stylesheet" href="/css/owl.theme.css" />
-          <link rel="stylesheet" href="/css/magnific-popup.css" />
-          <link rel="stylesheet" href="/css/nivo-lightbox.css" />
-          <link rel="stylesheet" href="/css/main.css" />
-          <link rel="stylesheet" href="/css/responsive.css" />
-          <link rel="stylesheet" href="/css/fontawesome-all.css" />
+          <link rel="stylesheet" href="css/bootstrap.min.css" />
+          <link rel="stylesheet" href="css/animate.css" />
+          <link rel="stylesheet" href="css/LineIcons.css" />
+          <link rel="stylesheet" href="css/owl.carousel.css" />
+          <link rel="stylesheet" href="css/owl.theme.css" />
+          <link rel="stylesheet" href="css/magnific-popup.css" />
+          <link rel="stylesheet" href="css/nivo-lightbox.css" />
+          <link rel="stylesheet" href="css/main.css" />
+          <link rel="stylesheet" href="css/responsive.css" />
+          <link rel="stylesheet" href="css/fontawesome-all.css" />
         </Head>
         <body>
           <Main />
           <NextScript />
 
-          <script src="/js/jquery-min.js" />
-          <script src="/js/popper.min.js" />
-          <script src="/js/bootstrap.min.js" />
-          <script src="/js/owl.carousel.js" />
-          <script src="/js/jquery.nav.js" />
-          <script src="/js/scrolling-nav.js" />
-          <script src="/js/jquery.easing.min.js" />
-          <script src="/js/nivo-lightbox.js" />
-          <script src="/js/jquery.magnific-popup.min.js" />
-          <script src="/js/main.js" />
+          <script src="js/jquery-min.js" />
+          <script src="js/popper.min.js" />
+          <script src="js/bootstrap.min.js" />
+          <script src="js/owl.carousel.js" />
+          <script src="js/jquery.nav.js" />
+          <script src="js/scrolling-nav.js" />
+          <script src="js/jquery.easing.min.js" />
+          <script src="js/nivo-lightbox.js" />
+          <script src="js/jquery.magnific-popup.min.js" />
+          <script src="js/main.js" />
         </body>
       </Html>
     );

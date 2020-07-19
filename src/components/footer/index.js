@@ -50,7 +50,7 @@ const Footer = () => {
             <div className="row">
               <div className="col-md-12">
                 <div className="site-info text-center">
-                  Copyright © Guan - StartUp Landing Page by Guan Tech
+                  © Copyright 2020 - Todos los derechos reservados - Guan Company
                 </div>
               </div>
             </div>

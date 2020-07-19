@@ -1,6 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
+import saveCustomer from '../../api/customers';
 
 const Header = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const handleChange = setValue => e => setValue(e.target.value);
+  const handleSaveCustomer = () => {
+    saveCustomer(name, email);
+    setName('');
+    setEmail('');
+  };
   return (
     <header id="home" className="hero-area">
       <div className="overlay">
@@ -10,7 +19,7 @@ const Header = () => {
       <nav className="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
         <div className="container">
           <a href="/" className="navbar-brand">
-            <img src="/img/logo2.png" alt="" />
+            <img src="img/logo2.png" alt="" />
           </a>
           <button
             className="navbar-toggler"
@@ -65,6 +74,8 @@ const Header = () => {
                     className="form-control"
                     id="name"
                     name="name"
+                    value={name}
+                    onChange={handleChange(setName)}
                     placeholder="Nombre"
                     required
                     data-error="Please enter your name"
@@ -77,14 +88,15 @@ const Header = () => {
                     className="form-control"
                     id="email"
                     name="email"
+                    value={email}
+                    onChange={handleChange(setEmail)}
                     placeholder="Email"
                     required
                     data-error="Please enter your Email"
                   />
                   <div className="help-block with-errors" />
                 </div>
-                <a href="https://rebrand.ly/slick-ud" rel="nofollow" target="_blank" className="btn btn-border-filled">
-                  Enviar</a>
+                <button type="button" className="btn btn-border-filled" data-toggle="modal" data-target="#exampleModal" onClick={handleSaveCustomer}>Enviar</button>
               </div>
             </div>
           </div>
@@ -103,8 +115,28 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <div className="modal fade" id="exampleModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal-dialog" role="document">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">¡Mensaje Enviado!</h5>
+              <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div className="modal-body">
+              Pronto estaremos en contacto contigo. Gracias por ser parte de Guan.
+            </div>
+            <div className="modal-footer text-center">
+              <button type="button" className="btn btn-success" data-dismiss="modal">Aceptar</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
   );
 };
+
+
 
 export default Header;
