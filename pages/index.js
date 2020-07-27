@@ -12,7 +12,7 @@ const Landing = () => {
   return (
     <div>
       <Head>
-        <title>Puntos Guan</title>
+        <title>Guan</title>
       </Head>
       <Header />
       <AboutUs />

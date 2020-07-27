@@ -85,6 +85,18 @@ const Contact = () => {
                   </div>
                   <div className="submit-button">
                     <button type="button" className="btn btn-common" onClick={handleSaveBusiness}>Enviar</button>
+                    <span className="fa-stack">
+                      <a href="mailto:contacto@guan.pe">
+                        <i className="fas fa-circle fa-stack-2x" />
+                        <i className="fas fa-envelope fa-stack-1x" />
+                      </a>
+                    </span>
+                    <span className="fa-stack">
+                      <a href="https://api.whatsapp.com/send?phone=+51995542843">
+                        <i className="fas fa-circle fa-stack-2x" />
+                        <i className="fab fa-whatsapp fa-stack-1x" />
+                      </a>
+                    </span>
                     <div id="msgSubmit" className="h3 hidden" />
                     <div className="clearfix" />
                   </div>

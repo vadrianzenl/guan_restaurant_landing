@@ -9,11 +9,6 @@ const AboutUs = () => {
             <div className="features-text section-header text-center">
               <div>
                 <h2 className="section-title">¿C&oacute;mo funciona Guan?</h2>
-                <div className="desc-text">
-                  <p>
-                    Acumula puntos y ahorra pagando con tus puntos Guan, ademas obten miles de descuentos en tus lugares favoritos
-                  </p>
-                </div>
               </div>
             </div>
           </div>

@@ -18,25 +18,7 @@ const Footer = () => {
                   <span className="fa-stack">
                     <a href="#your-link">
                       <i className="fas fa-circle fa-stack-2x" />
-                      <i className="fab fa-twitter fa-stack-1x" />
-                    </a>
-                  </span>
-                  <span className="fa-stack">
-                    <a href="#your-link">
-                      <i className="fas fa-circle fa-stack-2x" />
-                      <i className="fab fa-google-plus-g fa-stack-1x" />
-                    </a>
-                  </span>
-                  <span className="fa-stack">
-                    <a href="#your-link">
-                      <i className="fas fa-circle fa-stack-2x" />
                       <i className="fab fa-instagram fa-stack-1x" />
-                    </a>
-                  </span>
-                  <span className="fa-stack">
-                    <a href="#your-link">
-                      <i className="fas fa-circle fa-stack-2x" />
-                      <i className="fab fa-linkedin-in fa-stack-1x" />
                     </a>
                   </span>
                 </div>
@@ -50,7 +32,7 @@ const Footer = () => {
             <div className="row">
               <div className="col-md-12">
                 <div className="site-info text-center">
-                  © Copyright 2020 - Todos los derechos reservados - Guan Company
+                  © Copyright 2020 - Todos los derechos reservados - Guan
                 </div>
               </div>
             </div>

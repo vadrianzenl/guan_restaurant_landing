@@ -111,7 +111,7 @@ const Header = () => {
                 <a
                   id="play-video"
                   className="video-play-button video-popup"
-                  href="https://www.youtube.com/watch?v=V6k_PCPxEjU"
+                  href="https://www.youtube.com/watch?v=FJA_ecKZEHk"
                 >
                   <span />
                 </a>
