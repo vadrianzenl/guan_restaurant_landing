@@ -21,7 +21,7 @@ const Header = () => {
         <span />
         <span />
       </div>
-      <nav className="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
+      <nav className="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar menu-bg-init">
         <div className="container">
           <a href="/" className="navbar-brand">
             <img src="img/logo2.png" alt="" />

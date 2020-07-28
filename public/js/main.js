@@ -1,12 +1,12 @@
 (function($) {
-  
+
   "use strict";
-  
+
   /* Page Loader active
   ========================================================*/
   $('#preloader').fadeOut();
 
-  /* Testimonials Carousel 
+  /* Testimonials Carousel
   ========================================================*/
   var owl = $("#client-testimonial");
     owl.owlCarousel({
@@ -25,7 +25,7 @@
       itemsTablet: [767,1],
       itemsTabletSmall: [480,1],
       itemsMobile : [479,1],
-    });   
+    });
     $('#client-testimonial').find('.owl-prev').html('<i class="lni-chevron-left"></i>');
     $('#client-testimonial').find('.owl-next').html('<i class="lni-chevron-right"></i>');
 
@@ -48,7 +48,7 @@
 
 
 
-  /* 
+  /*
    Sticky Nav
    ========================================================================== */
     $(window).on('scroll', function() {
@@ -59,7 +59,7 @@
         }
     });
 
-  /* 
+  /*
  VIDEO POP-UP
  ========================================================================== */
   $('.video-popup').magnificPopup({
@@ -71,7 +71,7 @@
       fixedContentPos: false,
   });
 
-  /* 
+  /*
    Back Top Link
    ========================================================================== */
     var offset = 200;
@@ -92,13 +92,13 @@
       return false;
     })
 
-  /* 
+  /*
    One Page Navigation
    ========================================================================== */
 
 
     $(window).on('load', function() {
-       
+
         $('body').scrollspy({
             target: '.navbar-collapse',
             offset: 195
@@ -106,9 +106,13 @@
 
         $(window).on('scroll', function() {
             if ($(window).scrollTop() > 100) {
-                $('.fixed-top').addClass('menu-bg');
+              $('.fixed-top').addClass('menu-bg');
+              $('.fixed-top').removeClass('menu-bg-init');
+              $('.menu-item').removeClass('menu-item-li"');
             } else {
-                $('.fixed-top').removeClass('menu-bg');
+              $('.fixed-top').addClass('menu-bg-init');
+              $('.fixed-top').removeClass('menu-bg');
+              $('.menu-item').addClass('menu-item-li"');
             }
         });
 
@@ -130,7 +134,7 @@
   $(window).resize(close_toggle);
 
   /* Nivo Lightbox
-  ========================================================*/   
+  ========================================================*/
    $('.lightbox').nivoLightbox({
     effect: 'fadeScale',
     keyboardNav: true,

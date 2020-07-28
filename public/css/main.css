@@ -387,6 +387,14 @@ button:focus {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out; }
 
+.menu-bg-init {
+  background: var(--light-grey);
+  box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  padding: 5px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+
 .menu-bg .menu-button {
   top: 0; }
 
@@ -407,7 +415,7 @@ button:focus {
   color: #ffffff !important; }
 
 .navbar-expand-md .navbar-nav .nav-link {
-  color: #fff;
+  color: var(--dark_purple);
   font-size: 16px;
   padding: 8px 0px;
   margin-left: 26px;
@@ -422,7 +430,7 @@ button:focus {
   left: 0;
   width: 0;
   height: 2px;
-  background: #ffffff;
+  background: var(--dark_purple);
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   transition: 0.3s; }
@@ -444,7 +452,7 @@ button:focus {
 .navbar-expand-md .navbar-nav .nav-link.active:before,
 .navbar-expand-md .navbar-nav .nav-link.open,
 .navbar-expand-md .navbar-nav .open > .nav-link {
-  color: #ffffff; }
+  color: var(--dark_purple); }
 
 .navbar-expand-md .navbar-toggler {
   background: transparent;
