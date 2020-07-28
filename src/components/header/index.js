@@ -45,17 +45,17 @@ const Header = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link page-scroll" href="#services">
+                <a className="nav-link page-scroll menu-item-init" href="#services">
                   Con&oacute;cenos
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link page-scroll" href="#features">
+                <a className="nav-link page-scroll menu-item-init" href="#features">
                   Beneficios
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link page-scroll" href="#contact">
+                <a className="nav-link page-scroll menu-item-init" href="#contact">
                   Contacto
                 </a>
               </li>

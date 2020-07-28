@@ -154,11 +154,9 @@
 
 @media only screen and (max-width: 767px) {
   .bg-inverse {
-    background: #191c1e; }
+    background: var(--light-grey); }
   .navbar-expand-md .navbar-brand, .navbar-expand-md .navbar-toggler {
     margin: 6px 15px; }
-  .bg-inverse {
-    background: #191c1e; }
   .navbar {
     padding: 0; }
   .navbar-brand img {
@@ -166,11 +164,18 @@
   .features-benefits {
     text-align: center;
     margin-top: 20px;
+  }
+  .footer .footer-col{
+    text-align: center;
+  }
+  .stores {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }}
 
 @media (min-width: 320px) and (max-width: 480px) {
   .bg-inverse {
-    background: #191c1e; }
+    background: var(--light-grey); }
   .navbar {
     padding: 0; }
   .navbar-brand img {

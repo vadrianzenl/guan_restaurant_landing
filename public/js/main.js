@@ -108,18 +108,16 @@
             if ($(window).scrollTop() > 100) {
               $('.fixed-top').addClass('menu-bg');
               $('.fixed-top').removeClass('menu-bg-init');
-              $('.menu-item').removeClass('menu-item-li"');
             } else {
               $('.fixed-top').addClass('menu-bg-init');
               $('.fixed-top').removeClass('menu-bg');
-              $('.menu-item').addClass('menu-item-li"');
             }
         });
 
     });
 
   /* Auto Close Responsive Navbar on Click
-  ========================================================*/
+  ======================================================== */
   function close_toggle() {
       if ($(window).width() <= 768) {
           $('.navbar-collapse a').on('click', function () {
