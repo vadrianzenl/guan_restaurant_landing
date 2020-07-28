@@ -104,7 +104,7 @@ const Contact = () => {
               </div>
             </form>
           </div>
-          <div className="col-lg-1" />
+          <div className="col-lg-1 my-3" />
           <div className="col-lg-4 col-md-12">
             <div className="contact-img">
               <img src="img/contact/01.png" className="img-fluid" alt="" />

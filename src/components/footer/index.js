@@ -24,7 +24,7 @@ const Footer = () => {
                     </span>
                   </div>
                   <div className="col-lg-6 col-md-6 col-xs-12 text-lg-right text-md-right m-auto">
-                    <span className="stores">
+                    <span className="stores text-avialable">
                       <p>Pronto disponible en </p>
                     </span>
                     <span className="stores">

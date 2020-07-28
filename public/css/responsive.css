@@ -171,6 +171,9 @@
   .stores {
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+  .text-avialable {
+    width: 100%;
   }}
 
 @media (min-width: 320px) and (max-width: 480px) {
